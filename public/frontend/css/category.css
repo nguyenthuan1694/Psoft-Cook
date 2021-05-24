@@ -1,0 +1,209 @@
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('../font/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'OpenSans-Italic';
+	src: url('../font/OpenSans-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url('../font/OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('../font/OpenSans-Bold.ttf') format('truetype');
+}
+body{
+	font-family: 'OpenSans-Regular';
+	background: #f8f9fa;
+}
+
+.container {
+    max-width: 1212.5px;
+}
+
+img {
+	width: 100%
+}
+
+.container .vrsg-categories {
+	background-color: transparent;
+}
+
+.section--default {
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.category--list__left {
+	width: 250px;
+	margin-right: 30px;
+	padding: 0;
+}
+
+.category--list__title {
+	font-size: 18px;
+	/* font-weight: 600; */
+    background: #f48120;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.category--list__content {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.category--list__content li {
+	padding: 3px 5px 3px 15px;
+	font-size: 15px;
+}
+.list-category-has-child  {
+	position: relative;
+}
+
+.category--list__content li .active {
+	color: #f48120;
+}
+
+@keyframes loadLeft { 
+    0% { 
+        opacity: 0; 
+        margin-left: -100px;
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+}
+
+@keyframes loadTop { 
+    0% { 
+        opacity: 0; 
+        margin-top: -100px;
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+}
+
+.category--list__news, .category--list {
+    -webkit-animation-name: loadLeft;
+    animation-name: loadLeft;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.category-news__li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 0px 0px 10px;
+    border-bottom: 1px solid #f48120;
+}
+
+.category-news__content {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.section-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.category--list__right {
+	width: calc(100% - 280px)
+}
+
+.category--list__right .item-product {
+	width: 23%;
+}
+
+.category--list__right-title {
+    color: #f48120; 
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.category--list__product {
+    -webkit-animation-name: loadTop;
+    animation-name: loadTop;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.category--list__img {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -khtml-transform: translate(-50%);
+    width: 100%;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.category--list__img img {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    border-radius: 6px;
+    height: 150px;
+}
+
+.category--list__product-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    position: relative;
+    margin: 20px auto;
+}
+
+.category--list__product-content:hover .category--list__img{
+    top:-40px;
+}
+
+.category--list__product-content:hover .category--list__img img{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+.category--list__text {
+    padding-top: 90%;
+    font-size: 14px;
+}
+
+.category-text__title {
+    margin-top: 15px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 14px;
+    color: #f48120;
+    font-weight: 600;
+    height: 3em;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-grid__location, .product-grid__type, .product-grid__total-area {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

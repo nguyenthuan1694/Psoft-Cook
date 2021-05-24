@@ -1,0 +1,384 @@
+/** --------or-------- Css Start */
+.form-separator {
+    /* border-top: 1px solid rgb(43 78 95); */
+    height: 1px;
+    margin: 0px 0px 36px 0px;
+}
+
+.form-separator p {
+    font-family: "GT Walsheim Pro", Arial, sans-serif;
+    background: transparent;
+    color: white;
+    display: block;
+    margin: -11px auto;
+    text-align: center;
+    width: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.google-login {
+    position: relative;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+}
+
+.google-login:hover {
+  background-color: #84bcd4;
+}
+
+.google-login svg {
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+.login100-form a {
+    text-decoration: none;
+}
+
+.google-login-link:hover {
+    color: #FFF;
+}
+
+.google-login-link {
+    color: black    ;
+    background-color: transparent;
+    border-color: lightblue;
+    width: 100%;
+    padding: 0;
+    line-height: 42px;
+}
+
+/** --------or-------- Css End */
+
+
+.login-page-style {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.ab-login-box {
+    position: absolute;
+    top:0  ;
+    left:0;
+    margin: auto;
+    width: 100%;
+    height:100%;
+    background-image: url('/frontend/images/background/background_admin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-box{
+    margin:auto;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sub-login-box {
+    width: 90%;
+    margin:auto;
+    padding: 40px 30px;
+    border-radius: 5px;
+    background-color: #146984;
+}
+
+
+.img-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;   
+}
+
+
+.login-header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.input-login-class{
+    border-radius: 5px;
+    width: 100%;
+    line-height: 42px;
+    border: 1px solid lightblue;
+    background: transparent;
+    padding-left:2rem;
+    color: white;
+}
+
+.input-login-class::placeholder{
+    color: white;
+}
+
+.input-login-class:focus {
+    outline: none !important;
+    border:1px solid #FFF;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.remember-box{
+    text-align: left;
+    position: relative;
+    font-size: 0.8rem;
+    color: #CCCCCC;
+    margin-bottom: 2rem;
+}
+
+
+.new-account-box{
+    text-align: left;
+    color: #CCCCCC;
+}
+
+.sign-in-btn {
+    width: 100%;
+    background: #2996C7;
+    border-radius: 5px;
+    border: none;
+    height: 45px;
+    color: white;
+    opacity: 1;
+}
+
+.sign-in-btn:hover{
+     opacity: 0.8;
+}
+
+.pass-css {
+    margin-bottom: 1.5rem;
+}
+
+.check-label-container {
+    display: flex;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: center;
+}
+
+/* Hide the browser's default checkbox */
+.check-label-container input {
+  
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  margin-left: 10px;      
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  position: relative;
+}
+
+/* On mouse-over, add a grey background color */
+.check-label-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-label-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-label-container .checkmark:after {
+    top: 3px;
+    left: 8px;
+    width: 5px;
+     height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.forgot-pass-css{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.mess-area {
+    position: absolute;
+    left:0;
+    right: 0;  
+    z-index: 2;
+}
+
+
+.valid-error-css {
+    text-align: left;
+    font-size: 0.8rem;
+    color: #EC3237;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.is-invalid {
+    border-color: #EC3237;
+}
+
+@media (min-width: 300px) { 
+    .sub-login-box {
+        padding: 40px 15px;
+    }
+
+    .img-box img{
+        height: 100%;
+    }       
+
+    .login-page-style {
+        font-size: 1rem;
+        min-height: 720px;
+    } 
+
+    .mask-login {
+        margin-top:16%;
+    }
+
+    .img-box img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #i-register-page {
+        min-height: 750px;
+    }
+}
+
+@media (min-width: 768px) { 
+    #i-register-page {
+        min-height: unset;
+    }
+
+    .sub-login-box {
+        padding: 40px 30px;
+    }
+
+    /* .login-page-style {
+        min-height: unset;
+    }   */
+}
+
+@media (min-width: 1024px) { 
+
+    .img-box img{
+        height: 100%;
+    }
+
+    .login-page-style {
+        font-size: 1rem;
+    }      
+}
+
+@media (min-width: 1900px) { 
+    .img-box img{
+        width:100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+/** Register page *************************************/
+.captcha_box {
+    display: flex;
+    align-items: center;
+}
+
+.checkmark.checkmark-register {
+    margin-left:0;
+    margin-right: 10px;
+ 
+}
+
+.is-check-invalid {
+    border:1px solid red;
+}
+.remember-box.remember-box-register {
+       margin-top:1rem;
+       font-size: 0.8rem;   
+}
+
+
+.ab-register-box {
+    position: absolute;
+    top:0  ;
+    left:0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/background/background_admin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mask-register {
+    width: 100%;
+    position: relative;
+    background-color: lightblue;
+    padding-top: 100%;
+    opacity: 0.2;
+    border-radius: 10px;
+    margin-top: 20%;
+    height: 100%;
+}
+
+
+@media (min-width: 300px) { 
+}
+
+@media (min-width: 768px) { 
+}
+
+@media (min-width: 1024px) { 
+}
+
+a, a:hover{
+    color:#FFF
+}
+
+.show-password {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
